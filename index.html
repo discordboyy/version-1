@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home créative web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="link/icon.png" sizes="32x32">
+    
+    <!--FONTS:-->
+    <!--Inter:-->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <!--SF Pro Display:-->
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    
+
+</head>
+<body class="home">
+    <header>
+    <!-- Add link around the image -->
+    <a href="https://www.twitch.tv/mertygraal" id="logo-container">
+        <img src="link/Subtract (2).svg" id="logo" alt="Logo">
+    </a>
+
+    <script>
+        // Select the logo container (the anchor tag with the image)
+        const logoContainer = document.getElementById('logo-container');
+
+        // Function to handle mouse movement
+        document.addEventListener('mousemove', (event) => {
+            const { clientX, clientY } = event;
+
+            // Check if mouse is in the top-left corner
+            if (clientX < 200 && clientY < 80) {
+                logoContainer.classList.add('show'); // Slide the logo in
+            } else {
+                logoContainer.classList.remove('show'); // Slide the logo out
+            }
+        });
+    </script>
+
+        <nav role="navigation" class="navigation">
+            <ul class="hot-bar">
+                <li class="headbutton" id="home"><a href="index.html">Home</a></li>
+                <li class="headbutton" id="about"><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <hr>
+    <main>
+        <div class="frame">
+            <h1>créative space</h1>
+            <div class="content">
+                <h3>Робота:</h3>
+                <article>
+                    <p class="text-p">
+                        (я не пам'ятаю де знайшов це)
+                    </p>
+                </article>
+            </div>
+        </div>
+
+        <div class="frame-service">
+            <h1 class="title-service">Наші проекти</h1>
+            <p class="text-p" style="text-align: center; margin-top: 0;">це наш топ проектів за останій час</p>
+            <div class="main-content-menu">
+
+                <!--FRONT MENU:-->
+                <div class="container-carousel">
+                    <div class="menu-front">
+                        <!--CONTAINER 1:-->
+                        <div class="wrapper-container">
+                            <div class="content-container-menu">
+                                <article class="over-block">
+                                    <img class="profile-img" src="link/icon-58px.png" alt="icon of créative web">
+                                    <article class="over-block-name">
+                                        <p class="over-description">Friday, </p>
+                                        <p class="over-name-description">Friday, </p>
+                                    </article>
+                                </article>
+                                <article class="under-block">
+                                    <img class="main-img" src="link/pictures/air pods 1.png" alt="">
+                                    <article class="main-content">
+                                        <h3 class="caption">Digital Art Summit-Istanbul Edition</h3>
+                                        <article class="main-description">
+                                            <p class="under-description">Friday, </p>
+                                            <p class="under-description">Friday, </p>
+                                        </article>
+                                    </article>
+                                </article>
+                            </div>
+                        </div>
+    
+                        <!--CONTAINER 2:-->
+                        <div class="wrapper-container">
+                            <div class="content-container-menu">
+                                <article class="over-block">
+                                    <img class="profile-img" src="link/icon-58px.png" alt="icon of créative web">
+                                    <article class="over-block-name">
+                                        <p class="over-description">Friday, </p>
+                                        <p class="over-name-description">Friday, </p>
+                                    </article>
+                                </article>
+                                <article class="under-block">
+                                    <img class="main-img" src="link/pictures/Unusual Keyboard 1.png" alt="">
+                                    <article class="main-content">
+                                        <h3 class="caption">Digital Art Summit-Istanbul Edition</h3>
+                                        <article class="main-description">
+                                            <p class="under-description">Friday, </p>
+                                            <p class="under-description">Friday, </p>
+                                        </article>
+                                    </article>
+                                </article>
+                            </div>
+                        </div>
+    
+                        <!--CONTAINER 3:-->
+                        <div class="wrapper-container">
+                            <div class="content-container-menu">
+                                <article class="over-block">
+                                    <img class="profile-img" src="link/icon-58px.png" alt="icon of créative web">
+                                    <article class="over-block-name">
+                                        <p class="over-description">Friday, </p>
+                                        <p class="over-name-description">Friday, </p>
+                                    </article>
+                                </article>
+                                <article class="under-block">
+                                    <img class="main-img" src="link/pictures/magazine.png" alt="">
+                                    <article class="main-content">
+                                        <h3 class="caption">Digital Art Summit-Istanbul Edition</h3>
+                                        <article class="main-description">
+                                            <p class="under-description">Friday, </p>
+                                            <p class="under-description">Friday, </p>
+                                        </article>
+                                    </article>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+                <!--margin 27px between them-->
+
+                <!--UNDER MENU:-->
+                <div class="menu-under-container-carousel">
+                    <div class="menu-under">
+                        <div class="wrapper-container-under" style="background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent), url(link/pictures/blueprint.png); background-size: cover; background-position: center; background-repeat: no-repeat;">                    
+                            <div class="content-container-menu-under">
+                                <article class="over-block-text">
+                                    <p class="over-block-text-p" style="color: black;">Навсегда</p>
+                                    <h2 class="over-block-text-h2" style="color: black;">Продвинутое освещение</h2>
+                                </article>
+                                <article class="under-block-description">
+                                    <h3 class="under-block-description-h3" >от 3,330 ₽/мес</h3>
+                                    <p class="under-block-description-p" >При оплате в рассрочку</p>
+                                </article>
+                            </div>
+                        </div>
+    
+                        <div class="wrapper-container-under" style="background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent), url(link/pictures/luv2x\ squad.png); background-size: cover; background-position: center; background-repeat: no-repeat; "> 
+                            <div class="content-container-menu-under">
+                                <article class="over-block-text">
+                                    <p class="over-block-text-p" style="color: rgb(160, 160, 160);">Навсегда</p>
+                                    <h2 class="over-block-text-h2">Продвинутое освещение</h2>
+                                </article>
+                                <article class="under-block-description">
+                                    <h3 class="under-block-description-h3">от 3,330 ₽/мес</h3>
+                                    <p class="under-block-description-p">При оплате в рассрочку</p>
+                                </article>
+                            </div>
+                        </div>
+    
+                        <div class="wrapper-container-under" style="background-image: url(link/pictures/créative\ web\ &\ Nastya.png); background-size: contain;">                        
+                            <div class="content-container-menu-under">
+                                <article class="over-block-text">
+                                    <p class="over-block-text-p">Навсегда</p>
+                                    <h2 class="over-block-text-h2">Продвинутое освещение</h2>
+                                </article>
+                                <article class="under-block-description">
+                                    <h3 class="under-block-description-h3">от 3,330 ₽/мес</h3>
+                                    <p class="under-block-description-p">При оплате в рассрочку</p>
+                                </article>
+                            </div>
+                        </div>
+    
+                        <div class="wrapper-container-under" style="background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent), url(link/pictures/how\ was\ your\ day.png); background-size: cover; background-position: center; background-repeat: no-repeat;"> 
+                            <div class="content-container-menu-under">
+                                <article class="over-block-text">
+                                    <p class="over-block-text-p" style="color: black;">Навсегда</p>
+                                    <h2 class="over-block-text-h2" style="color: black;">Продвинутое освещение</h2>
+                                </article>
+                                <article class="under-block-description">
+                                    <h3 class="under-block-description-h3">от 3,330 ₽/мес</h3>
+                                    <p class="under-block-description-p">При оплате в рассрочку</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+    
+    </footer>
+
+</body>
+</html>
