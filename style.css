@@ -21,7 +21,7 @@ html {
 /* PAGES */
 
 .home {
-    background: url('link/backv2-resize.gif') no-repeat center center fixed; /* Background image */
+    background: url('backv2-resize.gif') no-repeat center center fixed; /* Background image */
     background-size: cover; /* Make the background cover the entire page */
     color: #000; /* Adjust text color as needed */
     margin: 0;
