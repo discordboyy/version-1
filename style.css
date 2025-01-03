@@ -21,15 +21,15 @@ html {
 /* PAGES */
 
 .home {
-    background: url('backv2-resize.gif') no-repeat center center fixed; /* Background image */
+    background: url('link/backv2-resize.gif') no-repeat center center fixed; /* Background image */
     background-size: cover; /* Make the background cover the entire page */
     color: #000; /* Adjust text color as needed */
     margin: 0;
     padding: 0;
 }
 
-.about {
-    background: url('FOLDER/IMG_5699\ 1.png') no-repeat center center fixed; /* Background image */
+.error {
+    background: url('background.png') no-repeat center center fixed; /* Background image */
     background-size: cover; /* Make the background cover the entire page */
     color: #000; /* Adjust text color as needed */
     margin: 0;
@@ -67,7 +67,7 @@ header {
     background-color: white;
     display: flex;
     justify-content: center; /* Centers the nav horizontally */
-    align-items: center;  
+    align-items: center;
     height: 80px;
     position: sticky;
     top: 0%;
@@ -157,7 +157,7 @@ li {
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: inset 8px 0.93px 7.46px 0px rgba(255, 255, 255, 0.35);
     box-shadow: inset -0.93px 0.93px 0.93px -1.86px rgba(255, 255, 255,);
-
+    
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 22.37px 27.97px 0px rgba(0, 0, 0, 0.1);
@@ -244,7 +244,7 @@ h3 {
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: inset 8px 0.93px 7.46px 0px rgba(255, 255, 255, 0.35);
     box-shadow: inset -0.93px 0.93px 0.93px -1.86px rgba(255, 255, 255,);
-
+    
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 22.37px 27.97px 0px rgba(0, 0, 0, 0.1);
@@ -362,11 +362,13 @@ h3 {
 }
 
 .wrapper-container-under {
-    position: relative; 
-    width: 100%; 
+    position: relative;
+    width: 100%;
     height: auto;
-    background-size: contain; 
-    background-position: center; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
+    url(link/pictures/pain/sk8.jpg);
+    background-size: contain;
+    background-position: center;
     background-color: #000;
     border-radius: 26.67px;
     width: 350.75px;
@@ -431,7 +433,28 @@ h3 {
     font-weight: 500;
     font-size: 100px;
     letter-spacing: -2%;
+    
+}
 
+
+
+.error main {
+    width: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.web-error-container {
+    margin: auto;
+    width: 47.65625vw;
+    height: 47.65625vw;
+}
+
+.web-error-img {
+    margin: auto;
+    width: 47.65625vw;
+    height: 47.65625vw;
 }
 
 
@@ -682,66 +705,72 @@ h3 {
     main {
         width: 1300px;
     }
-
+    
     .content {
         text-align: center;
     }
-
+    
     .main-content-menu {
         width: 1243px;
         margin: auto;
         margin-top: 60px;
     }
-
+    
     .menu-front {
         gap: 20.21px;
     }
-
+    
     .wrapper-container {
         width: 400.86px;
         height: 700.67px;
         border-radius: 27.05px;
     }
-
+    
     .content-container-menu {
         margin: auto;
         width: 360.43px;
         height: 651.35px;
     }
-
+    
     .over-block {
         height: 45px;
         gap: 13px;
     }
-
+    
     .profile-img {
         width: auto;
         height: auto;
     }
-
+    
     .over-block-name {
         height: auto;
     }
-
+    
     .over-description {
         height: 20px;
         font-size: 16px;
     }
-
+    
     .over-name-description {
         height: 20px;
         margin-top: 10%;
         font-size: 16px;
     }
-
+    
     .main-img {
         width: auto;
         height: 360px;
         border-radius: 24px;
     }
-
+    
     .content-container-menu-under{
         width: 260px;
+    }
+    
+    
+    
+    .web-error-container {
+        margin-top: 40px;
     }
 }
 
@@ -750,17 +779,22 @@ h3 {
         width: 1300px;
         overflow-x: hidden;
     }
-
+    
     .main-content-menu {
         width: 1243px;
         margin: auto;
         margin-top: 60px;
     }
+    
 }
 
 @media screen and (max-width: 1400px) {
     main {
         width: 1300px;
+    }
+    
+    .web-error-container {
+        margin-top: 50px;
     }
 }
 
@@ -768,12 +802,12 @@ h3 {
     main {
         width: 1100px;
     }
-
+    
     .content {
         width: auto;
         text-align: center;
     }
-
+    
     .main-content-menu {
         width: 1050px;
         margin: auto;
@@ -783,111 +817,136 @@ h3 {
     .menu-front {
         gap: 12px;
     }
-
+    
     .wrapper-container {
         width: 360.86px;
         height: 570.67px;
         border-radius: 27.05px;
     }
-
+    
     .content-container-menu {
         margin: auto;
         width: 310.43px;
         height: auto;
     }
-
+    
     .over-block {
         height: 35px;
         gap: 8px;
     }
-
+    
     .profile-img {
         width: auto;
         height: auto;
     }
-
+    
     .over-block-name {
         height: auto;
     }
-
+    
     .over-description {
         height: 20px;
         font-size: 14px;
     }
-
+    
     .over-name-description {
         height: 10px;
         margin-top: 2%;
         font-size: 14px;
     }
-
+    
     .under-block {
         margin-top: 15px;
     }
-
+    
     .main-img {
         width: auto;
         height: 312px;
         border-radius: 24px;
     }
     
-
+    
     .wrapper-container-under {
         width: 258.75px;
         height: 258.75px;
     }
-
+    
     .content-container-menu-under{
         width: 220px;
     }
-
+    
     .under-block-description {
         margin-top: 110px;
     }
-
+    
     .caption {
         font-size: 28px;
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
+    
     .over-block-text-h2 {
         font-size: 20px;
     }
-
+    
     .over-block-text-p {
         margin-top: 10px;
         margin-bottom: 1px;
     }
-
+    
     .under-block-description-h3 {
         font-size: 16px;
     }
-
+    
     .under-description {
         font-size: 16.66px;
         margin-bottom: 0;
     }
     
+    
+    
+    
+    .web-error-container {
+        width: 800px;
+        height: 800px;
+    }
+    
+    .web-error-img {
+        width: 800px;
+        height: 800px;
+    }
 }
 
 @media screen and (max-width: 1120px) {
     main {
         width: 900px;
     }
-
+    
+    #logo-container {
+        position: absolute;
+        top: 10px;
+        left: 0px; /* Hidden off-screen initially */
+        width: 60px;
+        transition: left 0.5s ease-in-out; /* Smooth sliding */
+        z-index: 1000;
+    }
+    
+    #logo {
+        width: 100%; /* Ensures the image fits within the container */
+    }
+    
     h1 {
         font-size: 100px;
     }
-
+    
     .title-service {
         font-size: 70px;
     }
-
+    
     .frame {
         height: 600px;
     }
-
+    
     .main-content-menu {
         width: 850px;
         margin: auto;
@@ -897,55 +956,55 @@ h3 {
     .menu-front {
         gap: 8px;
     }
-
+    
     .wrapper-container {
         width: 278px;
         height: 456px;
         border-radius: 22.05px;
     }
-
+    
     .content-container-menu {
         margin: auto;
         width: 260px;
         height: auto;
     }
-
+    
     .over-block {
         height: 28px;
         gap: 8px;
     }
-
+    
     .profile-img {
         width: auto;
         height: auto;
     }
-
+    
     .over-block-name {
         height: auto;
     }
-
+    
     .over-description {
         height: 15px;
         font-size: 10px;
     }
-
+    
     .over-name-description {
         height: 10px;
         margin-top: 2%;
         font-size: 10px;
     }
-
+    
     .under-block {
         margin-top: 12px;
     }
-
+    
     .main-img {
         border-radius: 5px;
         width: auto;
         height: 260px;
         border-radius: 24px;
     }
-
+    
     .caption {
         font-size: 22px;
         margin-top: 15px;
@@ -955,67 +1014,70 @@ h3 {
     .under-description {
         font-size: 10px;
     }
-
+    
     .menu-under {
         gap: 3.33px;
     }
-
+    
     .wrapper-container-under {
         width: 210px;
         height: 210px;
     }
-
+    
     .content-container-menu-under{
         width: 180px;
         height: 180px;
     }
-
+    
     .under-block-description {
         margin-top: 110px;
     }
-
+    
     .caption {
         font-size: 24px;
         margin-top: 15px;
         margin-bottom: 8px;
     }
-
+    
     .over-block-text-h2 {
         font-size: 14px;
         line-height: normal;
     }
-
+    
     .over-block-text-p {
         margin-top: 10px;
         font-size: 12px;
         margin-bottom: 1px;
     }
-
+    
     .under-block-description-h3 {
         line-height: normal;
         font-size: 10px;
     }
-
+    
     .under-description {
         margin-top: 4px;
         font-size: 15px;
         margin-bottom: 0;
     }
-
+    
     .under-block-description-p {
         font-size: 10px;
     }
+    
+    
+    
 }
 
 @media screen and (max-width: 920px) {
     main {
         width: 700px;
     }
-
+    
     .frame {
         height: 600px;
     }
-
+    
     .main-content-menu {
         width: 658px;
         margin: auto;
@@ -1024,17 +1086,22 @@ h3 {
     .container-carousel {
         display: flex; /* Horizontal layout */
         position: relative; /* Positioning relative for child elements */
+        scroll-behavior: smooth; /* Enables smooth scrolling when using JavaScript */
+        transition: ease-in-out; /* Smooth transition for transform property */
         overflow-x: auto; /* Enable horizontal scrolling */
         scroll-snap-type: x mandatory;
         cursor: grab;
     }
-
+    
     .container-carousel::-webkit-scrollbar {
         display: none;
     }
-
+    
     .container-carousel:active {
         cursor: grabbing; /* Change cursor when dragging */
+        transition: 0.1s ease-in-out;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 1;      /* Visible by default */
     }
     
     .menu-front {
@@ -1045,7 +1112,7 @@ h3 {
         gap: 8px;
         transition: 0.5s ease-in-out;
     }
-
+    
     .wrapper-container {
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -1056,57 +1123,70 @@ h3 {
         flex-direction: column;
         position: relative;
     }
-
+    
     .menu-under {
         display: inline-flex;
         flex-wrap: wrap;
         gap: 12px;
         position: relative;
     }
-
+    
     .content-container-menu-under {
         width: 280px;
         height: auto;
     }
-
+    
     .wrapper-container-under {
         width: 323px;
         height: 323px;
     }
-
+    
     .over-block-text-h2 {
         font-size: 24px;
         line-height: normal;
     }
-
+    
     .over-block-text-p {
         margin-top: 10px;
         font-size: 20px;
         margin-bottom: 1px;
     }
-
+    
     .under-block-description {
         margin-top: 170px;
     }
-
+    
     .under-block-description-h3 {
         line-height: normal;
         font-size: 16px;
     }
-
+    
     .caption {
         font-size: 24px;
         margin-top: 15px;
         margin-bottom: 8px;
     }
-
+    
     .under-description {
         font-size: 15px;
         margin-bottom: 0;
     }
-
+    
     .under-block-description-p {
         font-size: 16px;
+    }
+    
+    
+    
+    
+    .web-error-container {
+        width: 600px;
+        height: 600px;
+    }
+    
+    .web-error-img {
+        width: 600px;
+        height: 600px;
     }
 }
 
@@ -1114,13 +1194,13 @@ h3 {
     main {
         width: 600px;
     }
-
+    
     .main-content-menu {
         width: 580px;
         margin: auto;
         margin-top: 60px;
     }
-
+    
     .menu-under-container-carousel {
         display: flex;
         overflow: hidden;
@@ -1131,11 +1211,11 @@ h3 {
         scroll-snap-type: x mandatory;
         cursor: grab;
     }
-
+    
     .menu-under-container-carousel::-webkit-scrollbar {
         display: none;
     }
-
+    
     .menu-under-container-carousel:active {
         cursor: grabbing; /* Change cursor when dragging */
         transition: 0.1s ease-in-out;
@@ -1152,7 +1232,7 @@ h3 {
         gap: 8px;
         transition: 0.5s ease-in-out;
     }
-
+    
     .wrapper-container-under {
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -1171,19 +1251,33 @@ h3 {
     main {
         width: 500px;
     }
-
+    
     .frame {
         border-radius: 20px;
     }
-
+    
     .frame-service {
         border-radius: 20px;
     }
-
+    
     .main-content-menu {
         width: 480px;
         margin: auto;
         margin-top: 60px;
+    }
+    
+    
+    
+    
+    .web-error-container {
+        margin-top: 150px;
+        width: 500px;
+        height: 500px;
+    }
+    
+    .web-error-img {
+        width: 500px;
+        height: 500px;
     }
 }
 
@@ -1191,11 +1285,24 @@ h3 {
     main {
         width: auto;
     }
-
+    
     .main-content-menu {
         width: 460px;
         margin: auto;
         margin-top: 60px;
+    }
+    
+    
+    
+    
+    .web-error-container {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .web-error-img {
+        width: 400px;
+        height: 400px;
     }
 }
 
@@ -1203,21 +1310,33 @@ h3 {
     main {
         width: auto;
     }
-
+    
     .main-content-menu {
         width: auto;
     }
-
+    
     .menu-under {
         margin-top: 8px;
     }
-
+    
     .frame-service {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
+    
+    
 }
 
 @media screen and (max-width: 375px) {
+    
+    
+    .web-error-container {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .web-error-img {
+        width: 300px;
+        height: 300px;
+    }
 }
-
