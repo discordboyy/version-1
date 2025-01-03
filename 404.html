@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 error créative web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="link/icon.png" sizes="32x32">
+    
+    <!--FONTS:-->
+    <!--Inter:-->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <!--SF Pro Display:-->
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    
+
+</head>
+<body class="error">
+    <header>
+    <!-- Add link around the image -->
+    <a href="https://www.twitch.tv/mertygraal" id="logo-container">
+        <img src="link/Subtract (2).svg" id="logo" alt="Logo">
+    </a>
+
+    <script>
+        // Select the logo container (the anchor tag with the image)
+        const logoContainer = document.getElementById('logo-container');
+
+        // Function to handle mouse movement
+        document.addEventListener('mousemove', (event) => {
+            const { clientX, clientY } = event;
+
+            // Check if mouse is in the top-left corner
+            if (clientX < 200 && clientY < 80) {
+                logoContainer.classList.add('show'); // Slide the logo in
+            } else {
+                logoContainer.classList.remove('show'); // Slide the logo out
+            }
+        });
+    </script>
+
+        <nav role="navigation" class="navigation">
+            <ul class="hot-bar">
+                <li class="headbutton" id="home"><a href="index.html">Home</a></li>
+                <li class="headbutton" id="about"><a href="404.html">About</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <hr>
+    <main>
+        <article class="web-error-container">
+            <img id="error-image" class="web-error-img" src="" alt="Error 404">
+        </article>
+        
+        <script>
+            // Function to generate a random number between 1 and 2
+            function generateRandomNumber() {
+                return Math.floor(Math.random() * 2) + 1;
+            }
+        
+            // Generate the random number
+            const randomNumber = generateRandomNumber();
+            console.log("Generated Random Number:", randomNumber);
+        
+            // Get the image element
+            const imageElement = document.getElementById('error-image');
+        
+            if (randomNumber === 1) {
+                // If the number is 1, show the Donut image
+                imageElement.src = "link/pictures/404 error/donut.png";
+            } else if (randomNumber === 2) {
+                // If the number is 2, activate the image cycling script
+                const images = [
+                    "link/pictures/404 error/error 404 ver 1.png",
+                    "link/pictures/404 error/error 404 ver 2.png",
+                    "link/pictures/404 error/error 404 ver 3.png",
+                    "link/pictures/404 error/error 404 ver 4.png",
+                    "link/pictures/404 error/error 404 ver 5.png",
+                ];
+        
+                let currentIndex = 0; // Start cycling from the first image
+        
+                function changeImage() {
+                    currentIndex = (currentIndex + 1) % images.length; // Loop through the array
+                    imageElement.src = images[currentIndex]; // Update image source
+                }
+        
+                // Set the initial image and start the cycling
+                imageElement.src = images[currentIndex];
+                setInterval(changeImage, 500); // Change image every 500ms
+            }
+        </script>
+        
+
+    </main>
+    <footer>
+    
+    </footer>
+
+</body>
+</html>
